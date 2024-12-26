@@ -1,0 +1,8 @@
+body {
+    background: #F2F2F2;
+}
+
+.menu-superior ul, li, a{
+    display: flex;
+    text-align: center;
+}
