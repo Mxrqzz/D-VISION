@@ -6,35 +6,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="static/global/css/style.css" />
-    <title>D/VISION</title>
+    <title>D/VISION {{title}}</title>
   </head>
   <body>
-    <div class="menu-superior">
-      <ul>
-        <li>
-          <a href="/">HOME</a>
-        </li>
-        <li>
-          <a href="shop">SHOP</a>
-        </li>
-        <li>
-          <a href="gallery">GALERIA</a>
-        </li>
-        <li>
-          <a href="projects">PROJETOS</a>
-        </li>
-        <li>
-          <a href="brecho">BRECHO</a>
-        </li>
-        <li>
-          <a href="about">SOBRE NOS</a>
-        </li>
-      </ul>
-    </div>
-    <h1>
-      {% block test %}
-      <h2>Rodrigo</h2>
-      {% endblock test %}
-    </h1>
+    {% include "global/partials/menuSuperior.html" %}
+    <h1>{{page}}</h1>
   </body>
 </html>

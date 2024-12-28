@@ -2,5 +2,6 @@ from django.shortcuts import render
 
 # Create your views here.
 def about(request):
-    print("PAGINA SOBRE")
-    return render(request, 'about/index.html')
+    print('pagina about')
+    context = {"title": "Sobre nós", "page": "Sobre nós"}
+    return render(request, "about/index.html", context)
